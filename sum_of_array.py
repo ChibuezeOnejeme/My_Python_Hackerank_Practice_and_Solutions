@@ -7,6 +7,8 @@ def sum_simple_array(array):
     return sum(array)
 
 
-array_input =[5,4,6,7,8,9]
+array_input =list(map(int,input().rstrip().split()))# This take input in the commandline separated by space
+print(array_input)
 func = sum_simple_array(array_input)
 print(func)
+
