@@ -12,3 +12,4 @@ print(array_input)
 func = sum_simple_array(array_input)
 print(func)
 
+
