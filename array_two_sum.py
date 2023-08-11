@@ -23,3 +23,19 @@ def pair_two(array,k):
     print('\n'.join(map(str,list(output))))
 
 pair_two([1,3,8,4,5,2,2],4)
+
+example 2 using a hash map(dictionary) ie for Pair Sum or Two Sum
+That returns indexes of the two sum value for the target
+
+def two_sum(nums:list,target:int) ->list[int]:
+
+   prevMap ={} # val:index
+
+   for i,n in enumerate(nums):
+      diff =target-n
+      if diff in prevMap:
+         return [prevMap[diff],i]
+      prevMap[n]=i
+   return
+
+print(two_sum([1,3,8,4,5,2,2],4))
